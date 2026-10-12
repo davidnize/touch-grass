@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs'); -%>
+
+  <h1>🌙 Tonight's Sky</h1>
+
+  <div class="box">
+
+    <div class="item">
+      <div>
+        <h3>Sunset</h3>
+        <p><%= sunset %></p>
+      </div>
+      <div>
+        <h3>Moon</h3>
+        <p><%= moonPercent %>% full</p>
+      </div>
+      <div>
+        <h3>Moonrise</h3>
+        <p><%= moonrise %></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div>
+        <h3>Your plan</h3>
+        <p><%= plan %></p>
+      </div>
+    </div>
+
+  </div>
+
+<%- include('partials/footer.ejs'); -%>
